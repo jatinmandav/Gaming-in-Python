@@ -21,3 +21,6 @@ Details about all the Games can be Found on my Blog : https://jatinmandav.wordpr
   - Time Lapse Video on YouTube :  https://www.youtube.com/watch?v=2yxmoxSjv6U
 - [Tron 2D](Tron/)
   - Time Lapse Video on YouTube :  https://www.youtube.com/watch?v=2yxmoxSjv6U
+- [Chain Reaction](Chain_Reaction/)
+  - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=U0Hii6Jc9c8&t=1s
+  - More About Chain Reaction : https://jatinmandav.wordpress.com/2017/09/27/chain-reaction-in-python/
