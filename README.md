@@ -24,3 +24,6 @@ Details about all the Games can be Found on my Blog : https://jatinmandav.wordpr
 - [Chain Reaction](Chain_Reaction/)
   - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=U0Hii6Jc9c8&t=1s
   - More About Chain Reaction : https://jatinmandav.wordpress.com/2017/09/27/chain-reaction-in-python/
+- [8 Ball Pool](8_Ball_Pool/)
+  - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=K2sJSeN85eo&feature=youtu.be
+  - More About 8 Ball Pool : https://jatinmandav.wordpress.com/2017/10/13/8-ball-pool-in-python/
