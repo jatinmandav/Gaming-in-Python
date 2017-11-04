@@ -27,3 +27,6 @@ Details about all the Games can be Found on my Blog : https://jatinmandav.wordpr
 - [8 Ball Pool](8_Ball_Pool/)
   - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=K2sJSeN85eo&feature=youtu.be
   - More About 8 Ball Pool : https://jatinmandav.wordpress.com/2017/10/13/8-ball-pool-in-python/
+- [Stack Tower](Stack_Tower/)
+  - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=SgtqhG28JnM&feature=youtu.be
+  - More About Stack Tower : https://jatinmandav.wordpress.com/2017/11/05/stacks-in-python-using-pygame/
