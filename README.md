@@ -32,3 +32,7 @@ Details about all the Games can be Found on my Blog : https://jatinmandav.wordpr
   - More About Stack Tower : https://jatinmandav.wordpress.com/2017/11/05/stacks-in-python-using-pygame/
 - [Dodge The Ball!](Dodge_The_Ball/)
   - Time Lapse Video on YouTube : https://www.youtube.com/watch?v=PD17M_Dwdf8&feature=youtu.be
+- [Battles](Battles/)
+  Battles is a game inspired by popular mobile video game Clash of Clans
+  - Video on YouTube : https://www.youtube.com/watch?v=QmZWxahFvzw&t=0s
+  - More details on Blog : https://jatinmandav.wordpress.com/2018/01/03/battles-game-inspired-by-clash-of-clans/
