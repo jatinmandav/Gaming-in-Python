@@ -6,6 +6,13 @@ Link to 14 Hour Time Lapse of coding the game from Scratch: [Angry Birds - 14 Ho
 
 Link to Blog: [Angry Birds in Python Using PyGame](https://jatinmandav.wordpress.com/2018/05/25/angry-birds-in-python-using-pygame/)
 
+### Requirements:
+
+[Pygame Module](https://www.pygame.org)
+
+    pip install pygame
+
+
 ## Usage:
 
     git clone https://github.com/jatinmandav/Gaming-in-Python/tree/master/Angry_Birds
