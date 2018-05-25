@@ -36,3 +36,6 @@ Details about all the Games can be Found on my Blog : https://jatinmandav.wordpr
   Battles is a game inspired by popular mobile video game Clash of Clans
   - Video on YouTube : https://www.youtube.com/watch?v=QmZWxahFvzw&t=0s
   - More details on Blog : https://jatinmandav.wordpress.com/2018/01/03/battles-game-inspired-by-clash-of-clans/
+- [Angry Birds](Angry_Birds/)
+  - Video on YouTube : [Angry Birds - 14 Hour Time Lapse](https://www.youtube.com/watch?v=6in-mdiumcA&feature=youtu.be)
+  - More on Blog : [Angry Birds in Python Using PyGame](https://jatinmandav.wordpress.com/2018/05/25/angry-birds-in-python-using-pygame/)
