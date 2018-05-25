@@ -17,7 +17,7 @@ From Angry_Birds/ Directory:
     $ python main.py
 
 
-Game Play Screenshot:
+### Game Play Screenshot:
 
   <p align="center"> <img src="Images/game_play1.png"/> </p>
 
