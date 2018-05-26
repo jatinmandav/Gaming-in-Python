@@ -15,7 +15,7 @@ Link to Blog: [Angry Birds in Python Using PyGame](https://jatinmandav.wordpress
 
 ## Usage:
 
-    git clone https://github.com/jatinmandav/Gaming-in-Python/tree/master/Angry_Birds
+    wget https://github.com/jatinmandav/Gaming-in-Python/tree/master/Angry_Birds
     
 From Angry_Birds/ Directory:
 
