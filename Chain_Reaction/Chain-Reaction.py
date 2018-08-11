@@ -54,8 +54,8 @@ for i in range(noPlayers):
 
 d = blocks/2 - 2
 
-cols = width/blocks
-rows = height/blocks
+cols = int(width/blocks)
+rows = int(height/blocks)
 
 grid = []
 
