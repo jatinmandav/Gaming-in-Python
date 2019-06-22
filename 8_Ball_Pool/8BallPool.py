@@ -2,7 +2,7 @@
 #
 # 8 Ball Pool
 # Language - Python
-# Modules - pygame, sys, random, math 
+# Modules - pygame, sys, random, math
 #
 # Controls - Mouse, the length of Stick is propotional to Force applied
 #
@@ -67,14 +67,14 @@ class Ball:
         pygame.draw.ellipse(display, self.color, (x - radius, y - radius, radius*2, radius*2))
         if self.color == black or self.ballNum == "cue":
             ballNo = self.font.render(str(self.ballNum), True, white)
+            display.blit(ballNo, (x - 5, y - 5))
         else:
             ballNo = self.font.render(str(self.ballNum), True, black)
+            if self.ballNum > 9:
+                display.blit(ballNo, (x - 6, y - 5))
+            else:
+                display.blit(ballNo, (x - 5, y - 5))
 
-        if self.ballNum > 9:
-            display.blit(ballNo, (x - 6, y - 5))
-        else:
-            display.blit(ballNo, (x - 5, y - 5))
-            
     # Moves the Ball around the Screen
     def move(self):
         self.speed -= friction
@@ -168,7 +168,7 @@ def checkCueCollision(cueBall):
 
                 tangent = degrees((atan((balls[i].y - cueBall.y)/(balls[i].x - cueBall.x)))) + 90
                 angle = tangent + 90
-                
+
                 balls[i].angle = (2*tangent - balls[i].angle)
                 cueBall.angle = (2*tangent - cueBall.angle)
 
@@ -194,7 +194,7 @@ def checkCollision():
 
                     tangent = degrees((atan((balls[i].y - balls[j].y)/(balls[i].x - balls[j].x)))) + 90
                     angle = tangent + 90
-                    
+
                     balls[i].angle = (2*tangent - balls[i].angle)
                     balls[j].angle = (2*tangent - balls[j].angle)
 
@@ -211,7 +211,7 @@ def border():
 
 def score():
     font = pygame.font.SysFont("Agency FB", 30)
-    
+
     pygame.draw.rect(display, (51, 51, 51), (0, height, width, outerHeight))
     for i in range(len(balls)):
         balls[i].draw((i + 1)*2*(radius + 1), height + radius + 10)
@@ -226,7 +226,7 @@ def reset():
     balls = []
 
     s = 70
-    
+
     b1 = Ball(s, height/2 - 4*radius, 0, colors[0], 0, 1)
     b2 = Ball(s + 2*radius, height/2 - 3*radius, 0, colors[1], 0, 2)
     b3 = Ball(s, height/2 - 2*radius, 0, colors[2], 0, 3)
@@ -242,7 +242,7 @@ def reset():
     b13 = Ball(s + 4*radius, height/2 + 2*radius, 0, colors[12], 0, 13)
     b14 = Ball(s + 2*radius, height/2 + 3*radius, 0, colors[13], 0, 14)
     b15 = Ball(s, height/2 + 4*radius, 0, colors[14], 0, 15)
-    
+
     balls.append(b1)
     balls.append(b2)
     balls.append(b3)
@@ -258,9 +258,9 @@ def reset():
     balls.append(b13)
     balls.append(b14)
     balls.append(b15)
-    
 
-    
+
+
 def gameOver():
     font = pygame.font.SysFont("Agency FB", 75)
     if len(balls) == 0:
@@ -292,7 +292,7 @@ def poolTable():
     loop = True
 
     reset()
-    
+
     noPockets = 6
     pockets = []
 
@@ -302,7 +302,7 @@ def poolTable():
     p4 = Pockets(0, height - margin - 5 - p1.r, black)
     p5 = Pockets(width/2 - p1.r*2, height - margin - 5 - p1.r, black)
     p6 = Pockets(width - p1.r - margin - 5, height - margin - 5 - p1.r, black)
-    
+
     pockets.append(p1)
     pockets.append(p2)
     pockets.append(p3)
@@ -312,11 +312,11 @@ def poolTable():
 
     cueBall = Ball(width/2, height/2, 0, white, 0, "cue")
     cueStick = CueStick(0, 0, 100, stickColor)
-    
-    
+
+
     start = 0
     end = 0
-    
+
     while loop:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -338,7 +338,7 @@ def poolTable():
                     force = 10
 
                 cueStick.applyForce(cueBall, force)
-                
+
 
         display.fill(background)
 
@@ -346,30 +346,30 @@ def poolTable():
         cueBall.move()
 
         if not (cueBall.speed > 0):
-            
+
             cueStick.draw(cueBall.x, cueBall.y)
-        
+
         for i in range(len(balls)):
             balls[i].draw(balls[i].x, balls[i].y)
 
         for i in range(len(balls)):
            balls[i].move()
-        
+
         checkCollision()
         checkCueCollision(cueBall)
         border()
-        
+
         for i in range(noPockets):
             pockets[i].draw()
-            
+
         for i in range(noPockets):
             pockets[i].checkPut()
 
         if len(balls) == 1 and balls[0].ballNum == 8:
             gameOver()
 
-        score()            
-        
+        score()
+
         pygame.display.update()
         clock.tick(60)
 
