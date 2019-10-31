@@ -40,7 +40,7 @@ playerColor = [red, green, violet, yellow]
 font = pygame.font.SysFont("Times New Roman", 30)
 
 blocks = 40
-noPlayers = 2
+noPlayers = 4
 
 pygame.display.set_caption("Chain Reaction %d Player" % noPlayers)
 
@@ -52,10 +52,10 @@ players = []
 for i in range(noPlayers):
     players.append(playerColor[i])
 
-d = blocks/2 - 2
+d = blocks//2 - 2
 
-cols = int(width/blocks)
-rows = int(height/blocks)
+cols = int(width//blocks)
+rows = int(height//blocks)
 
 grid = []
 
@@ -105,7 +105,7 @@ def initializeGrid():
 def drawGrid(currentIndex):
     r = 0
     c = 0
-    for i in range(width/blocks):
+    for i in range(width//blocks):
         r += blocks
         c += blocks
         pygame.draw.line(display, players[currentIndex], (c, 0), (c, height))
