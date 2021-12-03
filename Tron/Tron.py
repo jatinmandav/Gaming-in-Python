@@ -103,7 +103,7 @@ def gameOver(number):
 
 def drawGrid():
     squares = 50
-    for i in range(width/squares):
+    for i in range(width//squares):
         pygame.draw.line(display, darkBlue, (i*squares, 0), (i*squares, height))
         pygame.draw.line(display, darkBlue, (0, i*squares), (width, i*squares))
 
